@@ -1,0 +1,72 @@
+<style>
+  @import url("/modules/zero_density.realityhub_module_example/styles.css");
+</style>
+
+<div class="module-example-container">
+  <h4>Reality Hub Module Example</h4>
+  <fieldset class="top">
+    <legend>Exchange Data</legend>
+    <div class="flex-left">
+      <table>
+        <thead>
+          <tr>
+            <th>Pair</th>
+            <th>Rate</th>
+            <th>Value</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>EUR/USD</td>
+            <td><div><i class="up-down-arrow"></i></div></td>
+            <td><reality-property type="Float"></reality-property></td>
+          </tr>
+          <tr>
+            <td>USD/GBP</td>
+            <td><div><i class="up-down-arrow"></i></div></td>
+            <td><reality-property type="Float"></reality-property></td>
+          </tr>
+          <tr>
+            <td>USD/JPY</td>
+            <td><div><i class="up-down-arrow"></i></div> </td>
+            <td><reality-property type="Float"></reality-property></td>
+          </tr>
+          <tr>
+            <td>USD/CAD</td>
+            <td><div><i class="up-down-arrow"></i></div> </td>
+            <td><reality-property type="Float"></reality-property></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="flex-right">
+      <button id="btnIn">In</button>
+      <button class="button" id="btnOut">Out</button>
+      <button class="button" id="btnUpdate">Update</button>
+      <div class="auto-update-prop">
+        <label for="autoupdate">Auto Update</label>
+        <reality-property id="autoupdate" type="Boolean"></reality-property>
+      </div>
+    </div>
+  </fieldset>
+
+  <fieldset class="transform-container">
+    <legend>Location 1</legend>
+    <div class="flex-left">
+      <reality-property type="Transform" id="location1"></reality-property>
+    </div>
+    <div class="flex-right">
+      <button id="btnGoTo1">Move Camera</button>
+    </div>
+  </fieldset>
+
+  <fieldset class="transform-container">
+    <legend>Location 2</legend>
+    <div class="flex-left">
+      <reality-property type="Transform" id="location2"></reality-property>
+    </div>
+    <div class="flex-right">
+      <button id="btnGoTo2">Move Camera</button>
+    </div>
+  </fieldset>
+</div>
