@@ -1,3 +1,19 @@
+// Copyright (c) 2021 Zero Density Inc.
+//
+// This file is part of realityhub-module-example.
+//
+// realityhub-module-example is free software: you can redistribute it and/or modify
+// it under the terms of the GNU General Public License version 2, as published by 
+// the Free Software Foundation.
+//
+// realityhub-module-example is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+// GNU General Public License for more details.
+//
+// You should have received a copy of the GNU General Public License
+// along with realityhub-module-example. If not, see <https://www.gnu.org/licenses/>.
+
 const { BrokerClient } = require("@zerodensity/realityhub-api");
 const express = require('express');
 const path = require('path');
