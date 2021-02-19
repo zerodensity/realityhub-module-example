@@ -1,0 +1,93 @@
+/*
+ * Copyright (c) 2021 Zero Density Inc.
+ *
+ * This file is part of realityhub-module-example.
+ *
+ * realityhub-module-example is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License version 2, as published by 
+ * the Free Software Foundation.
+ *
+ * realityhub-module-example is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with realityhub-module-example. If not, see <https://www.gnu.org/licenses/>.
+ */
+
+.module-example-container {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  padding: 20px;
+  width: 100%;
+  height: calc(100vh - 50px);
+  overflow: auto;
+}
+
+.module-example-container fieldset {
+  display: flex;
+  padding: 20px;
+  margin: 10px 0;
+  width: 800px;
+  border: 1px solid #5f5f5f;
+}
+
+.module-example-container legend {
+  padding: 0 10px;
+}
+
+.module-example-container label {
+  font-size: 14px;
+}
+
+.module-example-container .flex-left {
+  flex: 1;
+  justify-content: center;
+}
+.module-example-container .flex-right {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  align-items: center;
+  justify-content: center;
+}
+
+.module-example-container button {
+  width: 120px;
+  height: 40px;
+  background: #26a69a;
+  color: #eee;
+  border: 0;
+  border-radius: 2px;
+  margin: 10px;
+}
+
+.module-example-container button:hover {
+  background: #2bbbad;
+  cursor: pointer;
+}
+
+.module-example-container button:active {
+  background: #8bdad2;
+}
+
+.module-example-container i.up-down-arrow {
+  font-size: 36px;
+  font-style: normal;
+}
+
+.module-example-container i.up-down-arrow.clickable {
+  cursor: pointer;
+}
+
+.module-example-container i.up-down-arrow:after {
+  content: "▼";
+  color: #ff000060;
+}
+
+.module-example-container .up i.up-down-arrow:after {
+  content: "▲";
+  color: #00ff0060;
+}

@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ZDNodeGraph name="">
+	<ZDNodes>
+		<ZDNode name="EngineControl" class="EngineControl" nodeX="1330.254883" nodeY="-140.173401">
+			<ZDProperties>
+				<ZDProperty_String name="Description" index="0" showAsInputPin="False" showAsOutputPin="False" value="" />
+				<ZDProperty_Boolean name="EnableDebug" index="0" showAsInputPin="False" showAsOutputPin="False" value="False" />
+				<ZDProperty_String name="TargetFPS" index="0" showAsInputPin="False" showAsOutputPin="False" value="60.00 fps" />
+				<ZDProperty_Integer name="GameFPS" index="0" showAsInputPin="False" showAsOutputPin="False" value="54" />
+				<ZDProperty_String name="TimeCodeInfo" index="0" showAsInputPin="False" showAsOutputPin="False" value="No Timecode" />
+				<ZDProperty_Boolean name="HasSignal" index="0" showAsInputPin="False" showAsOutputPin="False" value="False" />
+				<ZDProperty_Boolean name="UseGPUDirect" index="0" showAsInputPin="False" showAsOutputPin="False" value="False" />
+				<ZDProperty_Integer name="CacheAhead" index="0" showAsInputPin="False" showAsOutputPin="False" value="2" />
+				<ZDProperty_String name="RealityVersion" index="0" showAsInputPin="False" showAsOutputPin="False" value="4.25" />
+				<ZDProperty_Boolean name="UpdateEveryFrame" index="0" showAsInputPin="False" showAsOutputPin="False" value="True" />
+				<ZDProperty_Boolean name="RenderLighting" index="0" showAsInputPin="False" showAsOutputPin="False" value="False" />
+				<ZDProperty_Boolean name="LightingDOF" index="0" showAsInputPin="False" showAsOutputPin="False" value="False" />
+				<ZDProperty_Boolean name="LightingMotionBlur" index="0" showAsInputPin="False" showAsOutputPin="False" value="False" />
+				<ZDProperty_Boolean name="SSRTemporal" index="0" showAsInputPin="False" showAsOutputPin="False" value="False" />
+				<ZDProperty_Boolean name="RenderSSR" index="0" showAsInputPin="False" showAsOutputPin="False" value="False" />
+				<ZDProperty_Boolean name="SSRDOF" index="0" showAsInputPin="False" showAsOutputPin="False" value="False" />
+				<ZDProperty_Boolean name="SSRMotionBlur" index="0" showAsInputPin="False" showAsOutputPin="False" value="False" />
+				<ZDProperty_Boolean name="Bloom" index="0" showAsInputPin="False" showAsOutputPin="False" value="False" />
+				<ZDProperty_Boolean name="RenderShadow" index="0" showAsInputPin="False" showAsOutputPin="False" value="False" />
+				<ZDProperty_Boolean name="ShadowDOF" index="0" showAsInputPin="False" showAsOutputPin="False" value="False" />
+				<ZDProperty_Boolean name="ShadowMotionBlur" index="0" showAsInputPin="False" showAsOutputPin="False" value="False" />
+				<ZDProperty_Float name="GCTimeOut" index="0" showAsInputPin="False" showAsOutputPin="False" value="61.099998" />
+				<ZDProperty_Float name="ForwardAxis" index="0" showAsInputPin="False" showAsOutputPin="False" value="0.0" />
+				<ZDProperty_Float name="RightAxis" index="0" showAsInputPin="False" showAsOutputPin="False" value="0.0" />
+				<ZDProperty_Float name="UpAxis" index="0" showAsInputPin="False" showAsOutputPin="False" value="0.0" />
+				<ZDProperty_Float name="LookRightAxis" index="0" showAsInputPin="False" showAsOutputPin="False" value="0.0" />
+				<ZDProperty_Float name="LookUpAxis" index="0" showAsInputPin="False" showAsOutputPin="False" value="0.0" />
+				<ZDProperty_Boolean name="Button0" index="0" showAsInputPin="False" showAsOutputPin="False" value="False" />
+				<ZDProperty_Boolean name="Button1" index="0" showAsInputPin="False" showAsOutputPin="False" value="False" />
+				<ZDProperty_Boolean name="Button2" index="0" showAsInputPin="False" showAsOutputPin="False" value="False" />
+				<ZDProperty_Boolean name="Button3" index="0" showAsInputPin="False" showAsOutputPin="False" value="False" />
+				<ZDProperty_Boolean name="Button4" index="0" showAsInputPin="False" showAsOutputPin="False" value="False" />
+				<ZDProperty_Boolean name="Button5" index="0" showAsInputPin="False" showAsOutputPin="False" value="False" />
+				<ZDProperty_Boolean name="FlushRendering" index="0" showAsInputPin="False" showAsOutputPin="False" value="False" />
+				<ZDProperty_Boolean name="OneFrameThreadLag" index="0" showAsInputPin="False" showAsOutputPin="False" value="True" />
+				<ZDProperty_Boolean name="EnableTrace" index="0" showAsInputPin="False" showAsOutputPin="False" value="False" />
+				<ZDProperty_Boolean name="GlobalClippingPlane" index="0" showAsInputPin="False" showAsOutputPin="False" value="False" />
+				<ZDProperty_Boolean name="ForwardShading" index="0" showAsInputPin="False" showAsOutputPin="False" value="False" />
+				<ZDProperty_Integer name="StreamingPoolSize" index="0" showAsInputPin="False" showAsOutputPin="False" value="0" />
+				<ZDProperty_Float name="ReflectionsMaxRayDistance" index="0" showAsInputPin="False" showAsOutputPin="False" value="-1.0" />
+				<ZDProperty_Float name="TonemapperGamma" index="0" showAsInputPin="False" showAsOutputPin="False" value="1.0" />
+				<ZDProperty_Float name="TonemapperSharpen" index="0" showAsInputPin="False" showAsOutputPin="False" value="0.0" />
+				<ZDProperty_String name="ColorGamut" index="0" showAsInputPin="False" showAsOutputPin="False" value="Rec709 / sRGB, D65 (default)" />
+				<ZDProperty_String name="HDRDeviceFormat" index="0" showAsInputPin="False" showAsOutputPin="False" value="sRGB (LDR)" />
+			</ZDProperties>
+			<ZDFunctions>
+				<ZDFunction name="ForceGarbageCollection" index="0" showAsInputEvent="False" showAsOutputEvent="False" />
+				<ZDFunction name="Sync" index="0" showAsInputEvent="False" showAsOutputEvent="False">
+					<ZDProperties>
+						<ZDProperty_Integer64 name="ControllerSyncTime" index="0" showAsInputPin="False" showAsOutputPin="False" value="0" />
+					</ZDProperties>
+				</ZDFunction>
+				<ZDFunction name="UpdateLicenseInfo" index="0" showAsInputEvent="False" showAsOutputEvent="False" />
+				<ZDFunction name="RemoveWatermark" index="0" showAsInputEvent="False" showAsOutputEvent="False" />
+				<ZDFunction name="Refresh" index="0" showAsInputEvent="False" showAsOutputEvent="False" />
+			</ZDFunctions>
+		</ZDNode>
+		<ZDNode name="Mixer_0" class="Mixer" nodeX="1008.451538" nodeY="-2.536522">
+			<ZDProperties>
+				<ZDProperty_String name="Description" index="0" showAsInputPin="False" showAsOutputPin="False" value="" />
+				<ZDProperty_Boolean name="EnableDebug" index="0" showAsInputPin="False" showAsOutputPin="False" value="False" />
+				<ZDProperty_String name="ProgramChannel" index="0" showAsInputPin="False" showAsOutputPin="False" value="Channel1" />
+				<ZDProperty_String name="PreviewChannel" index="0" showAsInputPin="False" showAsOutputPin="False" value="Channel2" />
+				<ZDProperty_Boolean name="IsInTransition" index="0" showAsInputPin="False" showAsOutputPin="False" value="False" />
+				<ZDProperty_Float name="Amount" index="0" showAsInputPin="False" showAsOutputPin="False" value="0.0" />
+				<ZDProperty_Size name="MultiviewerRenderSize" index="0" showAsInputPin="False" showAsOutputPin="False" value="1920, 1080" />
+				<ZDProperty_String name="Channel1Name" index="0" showAsInputPin="False" showAsOutputPin="False" value="Channel1" />
+				<ZDProperty_String name="Channel2Name" index="0" showAsInputPin="False" showAsOutputPin="False" value="Channel2" />
+				<ZDProperty_String name="Channel3Name" index="0" showAsInputPin="False" showAsOutputPin="False" value="Channel3" />
+				<ZDProperty_String name="Channel4Name" index="0" showAsInputPin="False" showAsOutputPin="False" value="Channel4" />
+				<ZDProperty_String name="Channel5Name" index="0" showAsInputPin="False" showAsOutputPin="False" value="Channel5" />
+				<ZDProperty_String name="Channel6Name" index="0" showAsInputPin="False" showAsOutputPin="False" value="Channel6" />
+				<ZDProperty_String name="Channel7Name" index="0" showAsInputPin="False" showAsOutputPin="False" value="Channel7" />
+				<ZDProperty_String name="Channel8Name" index="0" showAsInputPin="False" showAsOutputPin="False" value="Channel8" />
+				<ZDProperty_String name="Channel9Name" index="0" showAsInputPin="False" showAsOutputPin="False" value="Channel9" />
+				<ZDProperty_String name="Channel10Name" index="0" showAsInputPin="False" showAsOutputPin="False" value="Channel10" />
+				<ZDProperty_Boolean name="Premultiply" index="0" showAsInputPin="False" showAsOutputPin="False" value="False" />
+				<ZDProperty_Float name="OverlayOpacity" index="0" showAsInputPin="False" showAsOutputPin="False" value="1.0" />
+			</ZDProperties>
+			<ZDFunctions>
+				<ZDFunction name="UpdateCameras" index="0" showAsInputEvent="False" showAsOutputEvent="False" />
+				<ZDFunction name="DoTransition" index="0" showAsInputEvent="False" showAsOutputEvent="False">
+					<ZDProperties>
+						<ZDProperty_Float name="Duration" index="0" showAsInputPin="False" showAsOutputPin="False" value="1.0" />
+						<ZDProperty_String name="Type" index="0" showAsInputPin="False" showAsOutputPin="False" value="Dissolve" />
+						<ZDProperty_Float name="WipeWidth" index="0" showAsInputPin="False" showAsOutputPin="False" value="0.4" />
+						<ZDProperty_String name="Target" index="0" showAsInputPin="False" showAsOutputPin="False" value="Program" />
+						<ZDProperty_String name="Interpolation" index="0" showAsInputPin="False" showAsOutputPin="False" value="EaseInOut" />
+						<ZDProperty_Float name="EaseExponent" index="0" showAsInputPin="False" showAsOutputPin="False" value="2.0" />
+						<ZDProperty_Integer name="StepCount" index="0" showAsInputPin="False" showAsOutputPin="False" value="5" />
+					</ZDProperties>
+				</ZDFunction>
+			</ZDFunctions>
+		</ZDNode>
+		<ZDNode name="Camera_0" class="Camera" nodeX="653.90509" nodeY="-117.9226">
+			<ZDProperties>
+				<ZDProperty_String name="Description" index="0" showAsInputPin="False" showAsOutputPin="False" value="" />
+				<ZDProperty_Boolean name="EnableDebug" index="0" showAsInputPin="False" showAsOutputPin="False" value="False" />
+				<ZDProperty_Transform name="LocalTransform" index="0" showAsInputPin="False" showAsOutputPin="False" location="0.0, 0.0, 0.0" rotation="0.0, 0.0, 0.0" scale="1.0, 1.0, 1.0" />
+				<ZDProperty_Float name="FOV" index="0" showAsInputPin="False" showAsOutputPin="False" value="60.0" />
+				<ZDProperty_Vector2D name="CenterShift" index="0" showAsInputPin="False" showAsOutputPin="False" value="0.0, 0.0" />
+				<ZDProperty_Vector2D name="SensorSize" index="0" showAsInputPin="False" showAsOutputPin="False" value="9.59, 5.394" />
+				<ZDProperty_Float name="AnamorphicRatio" index="0" showAsInputPin="False" showAsOutputPin="False" value="1.0" />
+				<ZDProperty_Boolean name="EnableRender" index="0" showAsInputPin="False" showAsOutputPin="False" value="True" />
+				<ZDProperty_Size name="RenderSize" index="0" showAsInputPin="False" showAsOutputPin="False" value="1920, 1080" />
+				<ZDProperty_Transform name="RenderTransform" index="0" showAsInputPin="False" showAsOutputPin="False" location="0.0, 0.0, 0.0" rotation="0.0, 0.0, 0.0" scale="1.0, 1.0, 1.0" />
+				<ZDProperty_String name="ViewMode" index="0" showAsInputPin="False" showAsOutputPin="False" value="Lit" />
+				<ZDProperty_Float name="Acceleration" index="0" showAsInputPin="False" showAsOutputPin="False" value="100.0" />
+				<ZDProperty_Float name="RotationSpeed" index="0" showAsInputPin="False" showAsOutputPin="False" value="20.0" />
+				<ZDProperty_Boolean name="EnableMirror" index="0" showAsInputPin="False" showAsOutputPin="False" value="False" />
+				<ZDProperty_Transform name="Mirror" index="0" showAsInputPin="False" showAsOutputPin="False" location="0.0, 0.0, 0.0" rotation="0.0, 0.0, 0.0" scale="1.0, 1.0, 1.0" />
+				<ZDProperty_Boolean name="EnablePortalWindow" index="0" showAsInputPin="False" showAsOutputPin="False" value="False" />
+				<ZDProperty_Boolean name="BottomLeftPivot" index="0" showAsInputPin="False" showAsOutputPin="False" value="False" />
+				<ZDProperty_Transform name="PortalWindow" index="0" showAsInputPin="False" showAsOutputPin="False" location="0.0, 0.0, 0.0" rotation="0.0, 0.0, 0.0" scale="1.0, 1.0, 1.0" />
+				<ZDProperty_Boolean name="EnableClippingPlane" index="0" showAsInputPin="False" showAsOutputPin="False" value="False" />
+				<ZDProperty_Transform name="ClippingPlane" index="0" showAsInputPin="False" showAsOutputPin="False" location="0.0, 0.0, 0.0" rotation="0.0, 0.0, 0.0" scale="1.0, 1.0, 1.0" />
+				<ZDProperty_Boolean name="FlipClippingPlane" index="0" showAsInputPin="False" showAsOutputPin="False" value="False" />
+				<ZDProperty_String name="Anti-aliasingMethod" index="0" showAsInputPin="False" showAsOutputPin="False" value="TemporalAA" />
+				<ZDProperty_String name="UpscaleMethod" index="0" showAsInputPin="False" showAsOutputPin="False" value="Temporal" />
+				<ZDProperty_Vector2D name="TAAJitterGain" index="0" showAsInputPin="False" showAsOutputPin="False" value="1.0, 1.0" />
+				<ZDProperty_Boolean name="DisableFog" index="0" showAsInputPin="False" showAsOutputPin="False" value="False" />
+				<ZDProperty_Float name="DOF" index="0" showAsInputPin="False" showAsOutputPin="False" value="1.0" />
+				<ZDProperty_Float name="MotionBlur" index="0" showAsInputPin="False" showAsOutputPin="False" value="1.0" />
+				<ZDProperty_Float name="TemporalAA" index="0" showAsInputPin="False" showAsOutputPin="False" value="1.0" />
+				<ZDProperty_Float name="Tonemapper" index="0" showAsInputPin="False" showAsOutputPin="False" value="1.0" />
+				<ZDProperty_Boolean name="RenderRealityMask" index="0" showAsInputPin="False" showAsOutputPin="False" value="True" />
+				<ZDProperty_Boolean name="RealityMaskDOF" index="0" showAsInputPin="False" showAsOutputPin="False" value="True" />
+				<ZDProperty_Boolean name="RealityMaskMotionBlur" index="0" showAsInputPin="False" showAsOutputPin="False" value="True" />
+			</ZDProperties>
+		</ZDNode>
+		<ZDNode name="UserTrack_0" class="UserTrack" nodeX="306.275879" nodeY="105.788818">
+			<ZDProperties>
+				<ZDProperty_String name="Description" index="0" showAsInputPin="False" showAsOutputPin="False" value="" />
+				<ZDProperty_Boolean name="EnableDebug" index="0" showAsInputPin="False" showAsOutputPin="False" value="False" />
+				<ZDProperty_Transform name="Transform" index="0" showAsInputPin="False" showAsOutputPin="False" location="200.0, -900.0, 200.0" rotation="0.0, 115.998901, 0.0" scale="1.0, 1.0, 1.0" />
+				<ZDProperty_Transform name="RawTransform" index="0" showAsInputPin="False" showAsOutputPin="False" location="200.0, -900.0, 200.0" rotation="0.0, 115.998901, 0.0" scale="1.0, 1.0, 1.0" />
+				<ZDProperty_Float name="Zoom" index="0" showAsInputPin="False" showAsOutputPin="False" value="0.0" />
+				<ZDProperty_Float name="Focus" index="0" showAsInputPin="False" showAsOutputPin="False" value="0.0" />
+				<ZDProperty_Float name="NodalOffset" index="0" showAsInputPin="False" showAsOutputPin="False" value="0.0" />
+				<ZDProperty_Float name="FOV" index="0" showAsInputPin="False" showAsOutputPin="False" value="60.0" />
+				<ZDProperty_Float name="K1" index="0" showAsInputPin="False" showAsOutputPin="False" value="0.0" />
+				<ZDProperty_Float name="K2" index="0" showAsInputPin="False" showAsOutputPin="False" value="0.0" />
+				<ZDProperty_Float name="DistortionScale" index="0" showAsInputPin="False" showAsOutputPin="False" value="1.0" />
+				<ZDProperty_Float name="CenterShiftX" index="0" showAsInputPin="False" showAsOutputPin="False" value="0.0" />
+				<ZDProperty_Float name="CenterShiftY" index="0" showAsInputPin="False" showAsOutputPin="False" value="0.0" />
+				<ZDProperty_Float name="DOF" index="0" showAsInputPin="False" showAsOutputPin="False" value="0.0" />
+				<ZDProperty_Float name="FakeFOV" index="0" showAsInputPin="False" showAsOutputPin="False" value="60.0" />
+				<ZDProperty_Boolean name="EnableFakeFOV" index="0" showAsInputPin="False" showAsOutputPin="False" value="True" />
+				<ZDProperty_Integer name="TrackDelay" index="0" showAsInputPin="False" showAsOutputPin="False" value="0" />
+				<ZDProperty_Integer name="ZoomFocusDelay" index="0" showAsInputPin="False" showAsOutputPin="False" value="0" />
+				<ZDProperty_Float name="SensorWidth" index="0" showAsInputPin="False" showAsOutputPin="False" value="9.59" />
+				<ZDProperty_Float name="SensorHeight" index="0" showAsInputPin="False" showAsOutputPin="False" value="5.394" />
+				<ZDProperty_Float name="AnamorphicRatio" index="0" showAsInputPin="False" showAsOutputPin="False" value="1.0" />
+				<ZDProperty_Float name="RenderRatio" index="0" showAsInputPin="False" showAsOutputPin="False" value="1.0" />
+				<ZDProperty_Transform name="DeviceTransform" index="0" showAsInputPin="False" showAsOutputPin="False" location="0.0, 0.0, 0.0" rotation="0.0, 0.0, 0.0" scale="1.0, 1.0, 1.0" />
+				<ZDProperty_Transform name="CameraTransform" index="0" showAsInputPin="False" showAsOutputPin="False" location="0.0, 0.0, 0.0" rotation="0.0, 0.0, 0.0" scale="1.0, 1.0, 1.0" />
+				<ZDProperty_String name="CoordinateSystem" index="0" showAsInputPin="False" showAsOutputPin="False" value="XYZ" />
+				<ZDProperty_String name="RotationSystem" index="0" showAsInputPin="False" showAsOutputPin="False" value="PTR" />
+				<ZDProperty_Boolean name="NegateX" index="0" showAsInputPin="False" showAsOutputPin="False" value="False" />
+				<ZDProperty_Boolean name="NegateY" index="0" showAsInputPin="False" showAsOutputPin="False" value="False" />
+				<ZDProperty_Boolean name="NegateZ" index="0" showAsInputPin="False" showAsOutputPin="False" value="False" />
+				<ZDProperty_Float name="TransformScale" index="0" showAsInputPin="False" showAsOutputPin="False" value="1.0" />
+				<ZDProperty_Boolean name="NegateRoll" index="0" showAsInputPin="False" showAsOutputPin="False" value="False" />
+				<ZDProperty_Boolean name="NegatePan" index="0" showAsInputPin="False" showAsOutputPin="False" value="False" />
+				<ZDProperty_Boolean name="NegateTilt" index="0" showAsInputPin="False" showAsOutputPin="False" value="False" />
+				<ZDProperty_Transform name="PreTransform1" index="0" showAsInputPin="False" showAsOutputPin="False" location="0.0, 0.0, 0.0" rotation="0.0, 0.0, 0.0" scale="1.0, 1.0, 1.0" />
+				<ZDProperty_Transform name="PreTransform2" index="0" showAsInputPin="False" showAsOutputPin="False" location="0.0, 0.0, 0.0" rotation="0.0, 0.0, 0.0" scale="1.0, 1.0, 1.0" />
+				<ZDProperty_Transform name="PreTransform3" index="0" showAsInputPin="False" showAsOutputPin="False" location="0.0, 0.0, 0.0" rotation="0.0, 0.0, 0.0" scale="1.0, 1.0, 1.0" />
+				<ZDProperty_Transform name="PostTransform1" index="0" showAsInputPin="False" showAsOutputPin="False" location="0.0, 0.0, 0.0" rotation="0.0, 0.0, 0.0" scale="1.0, 1.0, 1.0" />
+				<ZDProperty_Transform name="PostTransform2" index="0" showAsInputPin="False" showAsOutputPin="False" location="0.0, 0.0, 0.0" rotation="0.0, 0.0, 0.0" scale="1.0, 1.0, 1.0" />
+				<ZDProperty_Transform name="PostTransform3" index="0" showAsInputPin="False" showAsOutputPin="False" location="0.0, 0.0, 0.0" rotation="0.0, 0.0, 0.0" scale="1.0, 1.0, 1.0" />
+				<ZDProperty_Boolean name="InvertZoom" index="0" showAsInputPin="False" showAsOutputPin="False" value="False" />
+				<ZDProperty_Boolean name="InvertFocus" index="0" showAsInputPin="False" showAsOutputPin="False" value="False" />
+				<ZDProperty_Float name="FOVRatio" index="0" showAsInputPin="False" showAsOutputPin="False" value="1.0" />
+				<ZDProperty_Float name="FOVOffset" index="0" showAsInputPin="False" showAsOutputPin="False" value="0.0" />
+				<ZDProperty_Float name="CenterShiftRatio" index="0" showAsInputPin="False" showAsOutputPin="False" value="2.0" />
+				<ZDProperty_Boolean name="KeepAlive" index="0" showAsInputPin="False" showAsOutputPin="False" value="True" />
+				<ZDProperty_Transform name="UserTransform" index="0" showAsInputPin="False" showAsOutputPin="False" location="200.0, -900.0, 200.0" rotation="0.0, 115.998901, 0.0" scale="1.0, 1.0, 1.0" />
+				<ZDProperty_Float name="UserZoom" index="0" showAsInputPin="False" showAsOutputPin="False" value="0.0" />
+				<ZDProperty_Float name="UserFocus" index="0" showAsInputPin="False" showAsOutputPin="False" value="0.0" />
+				<ZDProperty_Float name="Acceleration" index="0" showAsInputPin="False" showAsOutputPin="False" value="100.0" />
+				<ZDProperty_Float name="RotationSpeed" index="0" showAsInputPin="False" showAsOutputPin="False" value="20.0" />
+				<ZDProperty_Float name="NoiseIntensity" index="0" showAsInputPin="False" showAsOutputPin="False" value="0.0" />
+			</ZDProperties>
+			<ZDFunctions>
+				<ZDFunction name="UpdateTrackData" index="0" showAsInputEvent="False" showAsOutputEvent="False" />
+			</ZDFunctions>
+		</ZDNode>
+		<ZDNode name="Forex_0" class="Forex" nodeX="655.0271" nodeY="134.976044">
+			<ZDProperties>
+				<ZDProperty_String name="Description" index="0" showAsInputPin="False" showAsOutputPin="False" value="" />
+				<ZDProperty_Boolean name="EnableDebug" index="0" showAsInputPin="False" showAsOutputPin="False" value="False" />
+				<ZDProperty_String name="Widget" index="0" showAsInputPin="False" showAsOutputPin="False" value="Forex" />
+				<ZDProperty_Size name="RenderSize" index="0" showAsInputPin="False" showAsOutputPin="False" value="3840, 1920" />
+				<ZDProperty_Float name="RenderScale" index="0" showAsInputPin="False" showAsOutputPin="False" value="1.0" />
+				<ZDProperty_Color name="ClearColor" index="0" showAsInputPin="False" showAsOutputPin="False" value="0.0, 0.0, 0.0, 0.0" />
+				<ZDProperty_Boolean name="UpdateEveryFrame" index="0" showAsInputPin="False" showAsOutputPin="False" value="False" />
+				<ZDProperty_Boolean name="TwoWayBinding" index="0" showAsInputPin="False" showAsOutputPin="False" value="True" />
+				<ZDProperty_String name="JXD" index="0" showAsInputPin="False" showAsOutputPin="False" value="{&quot;line1&quot;:{&quot;text&quot;:&quot;EUR/USD&quot;,&quot;icon&quot;:&quot;up&quot;,&quot;value&quot;:&quot;1.1489&quot;},&quot;line2&quot;:{&quot;text&quot;:&quot;USD/GBP&quot;,&quot;icon&quot;:&quot;down&quot;,&quot;value&quot;:&quot;0.7359&quot;},&quot;line3&quot;:{&quot;text&quot;:&quot;USD/JPY&quot;,&quot;icon&quot;:&quot;down&quot;,&quot;value&quot;:&quot;100.95&quot;},&quot;line4&quot;:{&quot;text&quot;:&quot;USD/CAD&quot;,&quot;icon&quot;:&quot;down&quot;,&quot;value&quot;:&quot;1.2686&quot;}}" />
+			</ZDProperties>
+			<ZDFunctions>
+				<ZDFunction name="PlayAnimation" index="0" showAsInputEvent="False" showAsOutputEvent="False">
+					<ZDProperties>
+						<ZDProperty_String name="Animation" index="0" showAsInputPin="False" showAsOutputPin="False" value="FOREX_ANIM_INST" />
+						<ZDProperty_String name="PlayMode" index="0" showAsInputPin="False" showAsOutputPin="False" value="Forward" />
+						<ZDProperty_Float name="StartTime" index="0" showAsInputPin="False" showAsOutputPin="False" value="0.0" />
+						<ZDProperty_Integer name="LoopCount" index="0" showAsInputPin="False" showAsOutputPin="False" value="1" />
+						<ZDProperty_Float name="PlaybackSpeed" index="0" showAsInputPin="False" showAsOutputPin="False" value="1.0" />
+					</ZDProperties>
+				</ZDFunction>
+				<ZDFunction name="StopAnimation" index="0" showAsInputEvent="False" showAsOutputEvent="False">
+					<ZDProperties>
+						<ZDProperty_String name="Animation" index="0" showAsInputPin="False" showAsOutputPin="False" value="FOREX_ANIM_INST" />
+					</ZDProperties>
+				</ZDFunction>
+				<ZDFunction name="PauseAnimation" index="0" showAsInputEvent="False" showAsOutputEvent="False">
+					<ZDProperties>
+						<ZDProperty_String name="Animation" index="0" showAsInputPin="False" showAsOutputPin="False" value="FOREX_ANIM_INST" />
+					</ZDProperties>
+				</ZDFunction>
+				<ZDFunction name="REVERSE" index="0" showAsInputEvent="False" showAsOutputEvent="False" />
+				<ZDFunction name="PLAY" index="0" showAsInputEvent="False" showAsOutputEvent="False" />
+			</ZDFunctions>
+		</ZDNode>
+	</ZDNodes>
+	<ZDConnections>
+		<ZDConnection fromNode="Camera_0" fromPin="Output" fromIndex="0" toNode="Mixer_0" toPin="Channel1" toIndex="0" />
+		<ZDConnection fromNode="UserTrack_0" fromPin="Track" fromIndex="0" toNode="Camera_0" toPin="Track" toIndex="0" />
+		<ZDConnection fromNode="Forex_0" fromPin="Output" fromIndex="0" toNode="Mixer_0" toPin="Overlay" toIndex="0" />
+		<ZDConnection fromNode="Mixer_0" fromPin="Program" fromIndex="0" toNode="EngineControl" toPin="Display" toIndex="0" />
+	</ZDConnections>
+</ZDNodeGraph>
