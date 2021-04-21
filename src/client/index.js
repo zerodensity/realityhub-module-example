@@ -18,14 +18,33 @@ class ModuleExampleClient {
   async start() {
     this.containerElement = document.createElement('div');
 
-    const { brokerClient } = await window.registerRealityHubModule({
+    const initModule = (params) => {
+      const { brokerClient } = params;
+
+      this.api = brokerClient.api.zero_density.realityhub_module_example;
+      this.realityWorldAPI = brokerClient.api.hub.reality_world;
+
+      return this.containerElement;
+    }
+    
+    const destroyModule = () => {
+      if(this.containerElement) {
+        this.containerElement.remove();
+      }
+
+      if(this.api){
+        //Unsubscribe subscribed events..
+        this.api.off('exchangerates', this.updateTableData.bind(this));
+        this.api.off('statuschange', this.onStatusChange.bind(this));
+      }
+    }
+
+    await window.registerRealityHubModule({
       name: 'zero_density.realityhub_module_example_client',
       label: 'Module Example',
-      content: this.containerElement,
+      init: (registrationResult) => initModule(registrationResult),
+      destroy: () => destroyModule(),
     });
-
-    this.api = brokerClient.api.zero_density.realityhub_module_example;
-    this.realityWorlAPI = brokerClient.api.hub.reality_world;
 
     // Download Module Example's HTML file and set it to our container element
     const response = await fetch('/modules/zero_density.realityhub_module_example/index.html');
@@ -50,18 +69,7 @@ class ModuleExampleClient {
     });
 
     // Subscribe to (polling) status change event
-    this.api.on('statuschange', (e) => {
-      const started = e.status === 'started';
-
-      autoButton.property = {
-        ...autoButton.property,
-        Value: started,
-      };
-      
-      this.containerElement.querySelectorAll('i.up-down-arrow').forEach((icon) => {
-        this.updateIconClasses(started);
-      });
-    });
+    this.api.on('statuschange', this.onStatusChange.bind(this));
 
     // Get the current polling status
     const statusResponse = await this.api.getStatus();
@@ -75,7 +83,7 @@ class ModuleExampleClient {
     const inButton = this.containerElement.querySelector('#btnIn');
     
     inButton.addEventListener('click', () => {
-      this.realityWorlAPI.callNodeFunction({
+      this.realityWorldAPI.callNodeFunction({
         NodePath: 'Forex_0',
         PropertyPath: '//PLAY/0',
       });
@@ -85,7 +93,7 @@ class ModuleExampleClient {
     const outButton = this.containerElement.querySelector('#btnOut');
 
     outButton.addEventListener('click', () => {
-      this.realityWorlAPI.callNodeFunction({
+      this.realityWorldAPI.callNodeFunction({
         NodePath: 'Forex_0',
         PropertyPath: '//REVERSE/0',
       });
@@ -104,7 +112,7 @@ class ModuleExampleClient {
         nodeData[`line${i + 1}`].icon = row.classList.contains('up') ? 'up' : 'down';
       }
 
-      this.realityWorlAPI.setNodeProperty({
+      this.realityWorldAPI.setNodeProperty({
         NodePath: 'Forex_0',
         PropertyPath: 'Default//JXD/0',
         Value: JSON.stringify(nodeData),
@@ -148,7 +156,7 @@ class ModuleExampleClient {
 
     // Bind click handlers to Go buttons
     goBtn1.addEventListener('click', () => {
-      this.realityWorlAPI.setNodeProperty({
+      this.realityWorldAPI.setNodeProperty({
         Value: location1.property.Value,
         NodePath: 'UserTrack_0',
         PropertyPath: 'Input//UserTransform/0',
@@ -158,13 +166,26 @@ class ModuleExampleClient {
     });
 
     goBtn2.addEventListener('click', () => {
-      this.realityWorlAPI.setNodeProperty({
+      this.realityWorldAPI.setNodeProperty({
         Value: location2.property.Value,
         NodePath: 'UserTrack_0',
         PropertyPath: 'Input//UserTransform/0',
         InterpType: 'EaseInOut',
         Duration: 2,
       });
+    });
+  }
+
+  onStatusChange(e) {
+    const started = e.status === 'started';
+
+    autoButton.property = {
+      ...autoButton.property,
+      Value: started,
+    };
+    
+    this.containerElement.querySelectorAll('i.up-down-arrow').forEach((icon) => {
+      this.updateIconClasses(started);
     });
   }
 
