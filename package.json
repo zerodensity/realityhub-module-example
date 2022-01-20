@@ -4,7 +4,8 @@
   "version": "1.0.0",
   "description": "Reality Hub Module Example",
   "scripts": {
-    "start": "node src/server/index.js"
+    "start": "node src/server/index.js",
+    "dev": "nodemon src/server/index.js"
   },
   "author": "Bulent Vural <bulent.vural@zerodensity.tv>",
   "contributors": [
@@ -17,5 +18,11 @@
     "express": "^4.17.1",
     "node-fetch": "^2.6.1",
     "serve-static": "^1.14.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  },
+  "nodemonConfig": {
+    "watch": ["src/server/**"] 
   }
 }
