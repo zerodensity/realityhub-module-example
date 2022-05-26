@@ -110,7 +110,7 @@ class ModuleExampleBackend {
 
       await this.realityWorldAPI.setNodeProperty({
         NodePath: 'Forex_0',
-        PropertyPath: 'Default//JXD/0',
+        PropertyPath: 'Default//forex_json/0',
         Value: exchangeRatesJSON,
       });
       
