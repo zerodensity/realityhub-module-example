@@ -40,7 +40,7 @@ class ModuleExampleBackend {
     });
 
     this.api = this.brokerClient.api.zero_density.realityhub_module_example;
-    this.realityWorldAPI = this.brokerClient.api.hub.reality_world;
+    this.realityWorldAPI = this.brokerClient.api.hub.reality5_1_2_world;
 
     await this.brokerClient.registerAPIHandlers({
       startPolling: this.startPolling,
