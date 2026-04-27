@@ -22,7 +22,7 @@ class ModuleExampleClient {
       const { brokerClient } = params;
 
       this.api = brokerClient.api.zero_density.realityhub_module_example;
-      this.realityWorldAPI = brokerClient.api.hub.reality_world;
+      this.realityWorldAPI = brokerClient.api.hub.reality5_1_2_world;
 
       return this.containerElement;
     }
